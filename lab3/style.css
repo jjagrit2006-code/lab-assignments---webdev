@@ -1,0 +1,249 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #2C3E50;      /* Dark blue-gray for headers and nav */
+    --secondary-color: #3498DB;    /* Bright blue for accents and links */
+    --accent-color: #E74C3C;       /* Red for highlights and buttons */
+    --background-color: #ECF0F1;    /* Light gray for background */
+    --text-color: #2C3E50;         /* Dark text */
+    --light-text: #FFFFFF;          /* White text for contrast */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightcyan;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2C3E50;
+    color: var(--light-text);
+    padding: 2 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 0x;
+    color: var(--light-text);
+}
+
+
+nav {
+    background-color: var(--primary-color);
+    position: static;
+    top: 72.6px;
+    left: 450px;
+    /* z-index: 1000; */
+    padding: 10px 0;
+}
+
+nav ul {
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+   
+}
+
+nav ul li a {
+    color: var(--light-text);
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+section {
+    margin: 50px 0;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(44, 62, 80, 0.1);
+}
+
+section h2 {
+    color: var(--primary-color);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+section h3 {
+    color: var(--primary-color);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+#hero {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 50px 40px;
+}
+
+#hero h2 {
+    color: var(--light-text);
+    border-bottom: 3px solid var(--light-text);
+    font-size: 40px;
+}
+
+
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#about p{
+    text-align: center;
+}
+#about img {
+    border-radius: 30%;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+#projects ul {
+    padding: 0;
+}
+
+#projects ul li {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    border-left: 5px solid #3498DB;
+}
+
+
+#projects article h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+}
+
+
+table {
+    width: 100%;
+    margin: 30px 0;
+    background-color: white;
+    border: 2px solid white;
+}
+
+table thead {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+}
+
+table th {
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+table tbody tr {
+    border-bottom: 1px solid rgba(44, 62, 80, 0.2);
+}
+
+table tbody {
+    background-color: var(--background-color);
+}
+table td {
+    padding: 20px;
+    color: var(--text-color);
+    border: 1px solid rgba(44, 62, 80, 0.1);
+}
+table tbody tr td{
+    text-align: center;
+}
+
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#contact input[type="text"],#contact input[type="email"],#contact textarea {
+    width: 100%;
+    padding: 20px 20px;
+    border: 2px solid rgba(44, 62, 80, 0.2);
+    border-radius: 15px;
+    font-family: 'Consolas', sans-serif;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    background-color: orange;
+    color: whitesmoke;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--secondary-color);
+    margin: 30px 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    text-align: center;
+    padding: auto;
+    margin-top: 40ox;
+}
+
+footer p {
+    margin: 0;
+    color: var(--light-text);
+}
+
+
+nav ul {
+    flex-direction: row;
+    gap: 20px;
+}
+
